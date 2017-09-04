@@ -1,0 +1,71 @@
+$primary-color-dark: #00796B;
+$primary-color: #F45B69;
+$primary-color-light: #B2DFDB;
+$primary-color-text: #FFFFFF;
+$accent-color: #FFC107;
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$secondary-color: #D4CD36;
+body {
+    background-color: $primary-text-color;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    header {
+        height: 30vh;
+        width: 100%;
+        background-color: $primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $primary-color-text;
+        margin-bottom: 100px;
+    }
+    section {
+        margin: 0 auto;
+        ul {
+            padding: 100px 0px 100px 0px;
+            li {
+                list-style-type: none;
+                width: 6px;
+                height: 300px;
+                margin: 0px auto;
+                position: relative;
+                background-color: $primary-color-text;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    transform: translateX(-50%);
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 100%;
+                    background: $primary-color-text;
+                }
+            }
+            div {
+                position: absolute;
+                width: 30vw;
+                margin: 0px 0px 0px 50px;
+                background-color: $primary-color;
+                bottom: 0;
+                padding: 25px;
+                color: $primary-color-text;
+                time {
+                    font-weight: 600;
+                    font-size: 1.5em;
+                    text-transform: uppercase;
+                }
+                p {
+                    font-weight: 300;
+                    font-size: 1em;
+                }
+            }
+            .div-left {
+                right: 0;
+                margin: 0px 50px 0px 50px;
+                text-align: right;
+            }
+        }
+    }
+}
